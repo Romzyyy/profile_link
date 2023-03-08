@@ -1,23 +1,23 @@
 const project = [
     {
         name: 'layouting',
-        image: '/images/pro1.jpg',
+        image: '/images/pro1.avif',
     },
     {
         name: 'layouting',
-        image: '/images/pro2.jpg',
+        image: '/images/pro2.avif',
     },
     {
         name: 'layouting',
-        image: '/images/pro3.jpg',
+        image: '/images/pro3.avif',
     },
     {
         name: 'layouting',
-        image: '/images/pro5.png',
+        image: '/images/pro5.avif',
     },
     {
         name: 'layouting',
-        image: '/images/pro4.png',
+        image: '/images/pro4.avif',
     },
 ]
 
