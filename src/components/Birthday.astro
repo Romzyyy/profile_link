@@ -1,0 +1,14 @@
+---
+import birthday from '../data/birthday'
+---
+
+<div class='mt-6 mb-3 flex gap-14 md:!gap-14 justify-center'>
+    {
+        birthday.map((birth) => (
+            <div class='flex flex-col items-center justify-center'>
+                <p class='text-2xl font-bold text-navy-700'>{birth.info}</p>
+                <p class='text-sm font-normal text-gray-600'>{birth.type}</p>
+            </div>
+        ))
+    }
+</div>

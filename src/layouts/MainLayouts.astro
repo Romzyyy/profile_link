@@ -1,0 +1,16 @@
+---
+import MainHead from './MainHead.astro'
+import Footer from '../components/Footer.astro'
+const { title } = Astro.props
+---
+
+<html lang='en'>
+    <MainHead {title} />
+    <body>
+        <slot />
+        <Footer />
+        <script>
+            import '../js/main.js'
+        </script>
+    </body>
+</html>

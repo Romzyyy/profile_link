@@ -20,6 +20,3 @@ tabs.forEach((tab) => {
         tab.classList.add('text-slate-800')
     })
 })
-
-const copy = document.querySelector('#copyright')
-copy.textContent = new Date().getFullYear().toString()

@@ -1,0 +1,55 @@
+---
+import backend from "../data/backend";
+import frontend from "../data/frontend";
+
+---
+
+<div class='hidden' data-content id='skill'>
+    <div class='md:flex justify-around mt-20'>
+        <div class='flex flex-col w-full'>
+            <p class='font-bold tracking-widest text-center text-lg'>
+                Frontend Developer
+            </p>
+            <div class='grid grid-cols-2 py-12 gap-4'>
+                {
+                    frontend.map((frontends) => (
+                        <div class='flex gap-2 px-10'>
+                            <i class={frontends.icon} />
+                            <div class='flex-col leading-5'>
+                                <p class='font-medium'>
+                                    {frontends.skill}
+                                </p>
+                                <p class='text-slate-500'>
+                                    {frontends.level}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+
+        <div class='flex flex-col w-full'>
+            <p class='font-bold tracking-widest text-center text-lg'>
+                Backend Developer
+            </p>
+            <div class='grid grid-cols-2 py-12 gap-4'>
+                {
+                    backend.map((backends) => (
+                        <div class='flex gap-2 px-10'>
+                            <i class={backends.icon} />
+                            <div class='flex-col leading-5'>
+                                <p class='font-medium'>
+                                    {backends.skill}
+                                </p>
+                                <p class='text-slate-500'>
+                                    {backends.level}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</div>

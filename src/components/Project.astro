@@ -1,0 +1,20 @@
+---
+import project from '../data/project'
+---
+
+<div
+    class='grid grid-cols-1 px-4 gap-4 md:mt-8 md:grid-cols-3 mt-8'
+    data-content
+    id='project'>
+    {
+        project.map((projects) => (
+            <div class='lg:flex'>
+                <img
+                    class='object-cover w-full h-56 rounded-lg lg:w-64'
+                    src={projects.image}
+                    alt='project'
+                />
+            </div>
+        ))
+    }
+</div>

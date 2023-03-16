@@ -1,0 +1,21 @@
+---
+import profile from '/images/profile.avif'
+import baground from '/images/baground.avif'
+---
+
+<div
+    class='relative flex md:h-64 w-full justify-center rounded-xl bg-cover h-44 px-1 md:px-4'>
+    <img
+        src={baground}
+        class='flex h-full w-full justify-center rounded-xl bg-cover'
+        alt='bagroung'
+    />
+    <div
+        class='absolute -bottom-12 flex h-[125px] w-[125px] items-center justify-center rounded-full border-[12px] border-white dark:!border-navy-700'>
+        <img
+            class='h-full w-full rounded-full ring-4 ring-offset-4 ring-sky-500'
+            src={profile}
+            alt='profile'
+        />
+    </div>
+</div>
