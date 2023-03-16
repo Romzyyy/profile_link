@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-        .register('/sw.js')
+        .register('../sw.js')
         .then((registration) => {
             registration.addEventListener('updatefound', () => {
                 // If updatefound is fired, it means that there's
